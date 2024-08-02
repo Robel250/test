@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        font-weight: bold;
+      }
+      a {
+        background-color: green;
+        color: aliceblue;
+        padding: 12px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+      a:hover {
+        border: 3px solid green;
+        background-color: antiquewhite;
+        color: black;
+      }
+      ul {
+        background-color: yellow;
+       list-style-type: square;
+       color: black;
+       }
+      li::marker{ color: red;
+      }
+      img {
+        width: 100px;
+        height: 150px;
+        position: absolute;
+        z-index: -1;
+      }
+      h2 {
+        text-indent: 10px;
+      }
+      p {
+        text-indent: 10px;
+      }
+      span {
+        background-color: yellow;
+        border: 2px solid blue;
+      }
+      .inline {
+        display: inline;
+      }
+      .inline-block {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        padding-top: 4px;
+      }
+      .block {
+        display: block;
+        width: 200px;
+        height: 200px;
+        padding-top: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Bofore hover After Hover</p>
+    <div id="bofore hover"><a href="">This is link</a></div>
+    <br /><br />
+    <table>
+      <ul class="custem-bullets">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca cola</li>
+      </ul>
+    </table>
+    <br /><br />
+    <img src="sample_640×426.jpeg" alt="" />
+    <h2>This is a heading</h2>
+    <p>Because the has a Z-index of -1, it will be placed behind the text</p>
+    <br /><br />
+    <h1>The display property</h1>
+    <h3>display:inline</h3>
+    <br />
+    <p>
+      this is text this is text
+      <span class="inline">hello </span>&nbsp;
+      <span class="inline">there</span> this is text this is text
+    </p>
+    <h3>display:inline-block</h3>
+    <p>
+      this is text this is text
+      <span class="inline-block">hello </span>&nbsp;
+      <span class="inline-block">there</span> this is text this is text
+    </p>
+    <br />
+    <br />
+    <p>
+      this is text this is text
+      <span class="block">hello </span>&nbsp;
+      <span class="block">there</span> this is text this is text
+    </p>
+  </body>
+</html>
